@@ -21,6 +21,7 @@ for (C in c(0.3,0.5,0.7)){
   b = runif(N) # growth rate
   
   steady_state_relative = matrix(0,N,M)
+  steady_state_absolute = matrix(0,N,M)
   for (i in 1:M){
     set.seed(i)
     collection = sample(1:N,N_sub)
@@ -29,8 +30,10 @@ for (C in c(0.3,0.5,0.7)){
     x = glv(N = N, A, b = b, y = y_0, tstart = 0, tend = 100, tstep = 0.1, perturb = NULL)
     x[x<0] = 0
     steady_state_relative[,i] = x[,ncol(x)]/sum(x[,ncol(x)])
+    steady_state_absolute[,i] = x[,ncol(x)]
   }
   steady_state_relative[steady_state_relative<0] = 0
+  steady_state_absolute[steady_state_absolute<0] = 0
 
   # generate test samples used for keystoneness calculation
   species_id = c()
