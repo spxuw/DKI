@@ -29,7 +29,7 @@ Previous studies suggested that microbial communities harbor keystone species wh
 
 (3) Predicted species composition after removing each present species in each sample.
 
-# Data type for DKI.
+# Data type for DKI
 ## (1) Ptrain.csv: matrix of taxanomic profile of size N*M, where N is the number of taxa and M is the sample size (without header).
 
 |           | sample 1 | sample 2 | sample 3 | sample 4 |
@@ -88,8 +88,8 @@ Previous studies suggested that microbial communities harbor keystone species wh
 | 4      |
 | 4      |
 
-# How the use the DKI framework.
-## Step 1: Predict species compostion using perturbed species assemblage.
+# How the use the DKI framework
+## Step 1: Predict species compostion using perturbed species assemblage
 Run Python code "DKI.py" by taking Ptrain.csv and Ztest.csv as input will output the predicted microbiome composition using perturbed species colloction matrix Ztest.csv.
 The output file qtst.csv:
 
@@ -102,7 +102,7 @@ The output file qtst.csv:
 | species 5 | 0.0000000 | 0.0000000 | 0.000000  | 0.4444696  | 0.00000000 | 0.00000000 | 0.00000000 | 0.0000000 | 0.0000000 | 0.0000000  | 0.00000000 | 0.1946942 |
 | species 6 | 0.1684826 | 0.1712168 | 0.787059  | 0.5555304  | 0.07541692 | 0.07541692 | 0.07541692 | 0.0754169 | 0.0000000 | 0.0000000  | 0.00000000 | 0.0000000 |
 
-## Step 2: Compute the keystoneness.
+## Step 2: Compute the keystoneness
 Run R code Keystoneness_computing.R to compute the keystonenss of each present in each sample. The output file:
 
 | keystoneness | sample | species |
