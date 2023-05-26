@@ -14,7 +14,7 @@ We have tested this code for Python 3.8.13 and R 4.1.2.
 (2) Run "Keystoness_computing.R" to compute the keystoneness.
 
 # Data type for DKI.
-(1) Ptrain.csv: matrix of taxanomic profile of size N*M, where N is the number of taxa and M is the sample size (without header).
+### (1) Ptrain.csv: matrix of taxanomic profile of size N*M, where N is the number of taxa and M is the sample size (without header).
 
 |           | sample 1 | sample 2 | sample 3 | sample 4 |
 |-----------|----------|----------|----------|----------|
