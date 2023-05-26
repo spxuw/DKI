@@ -1,5 +1,5 @@
 # DKI (Data-driven Keystone species Identification)
-This is a TensorFlow implementation of DIRAC, as described in our paper:
+This is a Pytorch implementation of DKI, as described in our paper:
 
 Wang, X.W., Sun, Z., Jia, H., Michel-Mata, S., Angulo, M.T., Dai, L., He, X., Weiss, S.T. and Liu, Y.Y. [Identifying keystone species in microbial communities using deep learning]. bioRxiv, pp.2023-03 (2023). 
 
@@ -16,6 +16,11 @@ We have tested this code for Python 3.8.13 and R 4.1.2.
 - [Repo Contents](#repo-contents)
 - [Data type for DKI](#Data-type-for-DKI)
 - [How the use the DKI framework](#How-the-use-the-DKI-framework)
+
+# Overview
+
+Previous studies suggested that microbial communities harbor keystone species whose removal can cause a dramatic shift in microbiome structure and functioning. Yet, an efficient method to systematically identify keystone species in microbial communities is still lacking. This is mainly due to our limited knowledge of microbial dynamics and the experimental and ethical difficulties of manipulating microbial communities. Here, we propose a Data-driven Keystone species Identification (DKI) framework based on deep learning to resolve this challenge. Our key idea is to implicitly learn the assembly rules of microbial communities from a particular habitat by training a deep learning model using microbiome samples collected from this habitat. The well-trained deep learning model enables us to quantify the community-specific keystoneness of each species in any microbiome sample from this habitat by conducting a thought experiment on species removal. We systematically validated this DKI framework using synthetic data generated from a classical population dynamics model in community ecology. We then applied DKI to analyze human gut, oral microbiome, soil, and coral microbiome data. We found that those taxa with high median keystoneness across different communities display strong community specificity, and many of them have been reported as keystone taxa in literature. The presented DKI framework demonstrates the power of machine learning in tackling a fundamental problem in community ecology, paving the way for the data-driven management of complex microbial communities.
+
 
 ## This repository contains:
 (1) A synthetic dataset to test the Data-driven Keystone species Identification (DKI) framework.
