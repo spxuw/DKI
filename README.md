@@ -27,7 +27,7 @@ We have tested this code for Python 3.8.13 and R 4.1.2.
 
 (2) Thought experiment: thought experiemt was realized by removing each present species in each sample. This will generated three data type.
 
-* Item Ztest.csv: matrix of perturbed species collection of size N*C, where N is the number of taxa and C is the total perturbed samples (without header).
+* Ztest.csv: matrix of perturbed species collection of size N*C, where N is the number of taxa and C is the total perturbed samples (without header).
 
 |           | sample 1 | sample 2 | sample 3 | sample 4 | sample 5 | sample 6 | sample 7 | sample 8 | sample 9 | sample 10 | sample 11 | sample 12 |
 |-----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|-----------|-----------|-----------|
@@ -38,7 +38,7 @@ We have tested this code for Python 3.8.13 and R 4.1.2.
 | species 5 | 0        | 0        | 0        | 0        | 0        | 0        | 0        | 0        | 0        | 1         | 0         | 1         |
 | species 6 | 1        | 1        | 0        | 1        | 1        | 0        | 1        | 1        | 0        | 1         | 1         | 0         |
 
-Species_id: a list indicating which species has been removed in each sample.
+* Species_id: a list indicating which species has been removed in each sample.
 | species |
 |---------|
 | 1       |
@@ -54,7 +54,7 @@ Species_id: a list indicating which species has been removed in each sample.
 | 5       |
 | 6       |
 
-Sample_id: a list indicating which sample that the species been removed.
+* Sample_id: a list indicating which sample that the species been removed.
 | sample |
 |--------|
 | 1      |
