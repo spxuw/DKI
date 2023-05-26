@@ -12,3 +12,11 @@ We have tested this code for Python 3.8.13 and R 4.1.2.
 (1) Run "DKI.py" to predict species compostion using species assemblage.
 
 (2) Run "Keystoness_computing.R" to compute the keystoneness.
+
+# Data type for DKI.
+
+| Column 1 Header | Column 2 Header | Column 3 Header |
+| --------------- | --------------- | --------------- |
+| Row 1 Column 1 | Row 1 Column 2 | Row 1 Column 3 |
+| Row 2 Column 1 | Row 2 Column 2 | Row 2 Column 3 |
+| Row 3 Column 1 | Row 3 Column 2 | Row 3 Column 3 |
