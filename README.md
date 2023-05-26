@@ -4,11 +4,18 @@ This is a TensorFlow implementation of DIRAC, as described in our paper:
 Wang, X.W., Sun, Z., Jia, H., Michel-Mata, S., Angulo, M.T., Dai, L., He, X., Weiss, S.T. and Liu, Y.Y. [Identifying keystone species in microbial communities using deep learning]. bioRxiv, pp.2023-03 (2023). 
 
 <p align="center">
-  <img src="Paper/DKI.png" alt="demo" width="600" height="450" style="display: block; margin: 0 auto;">
+  <img src="Paper/DKI.png" alt="demo" width="600" height="470" style="display: block; margin: 0 auto;">
 </p>
 
 
 We have tested this code for Python 3.8.13 and R 4.1.2.
+
+## Contents
+
+- [Overview](#overview)
+- [Repo Contents](#repo-contents)
+- [Data type for DKI](#Data-type-for-DKI)
+- [How the use the DKI framework](#How-the-use-the-DKI-framework)
 
 ## This repository contains:
 (1) A synthetic dataset to test the Data-driven Keystone species Identification (DKI) framework.
