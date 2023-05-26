@@ -22,7 +22,7 @@ We have tested this code for Python 3.8.13 and R 4.1.2.
 Previous studies suggested that microbial communities harbor keystone species whose removal can cause a dramatic shift in microbiome structure and functioning. Yet, an efficient method to systematically identify keystone species in microbial communities is still lacking. This is mainly due to our limited knowledge of microbial dynamics and the experimental and ethical difficulties of manipulating microbial communities. Here, we propose a Data-driven Keystone species Identification (DKI) framework based on deep learning to resolve this challenge. Our key idea is to implicitly learn the assembly rules of microbial communities from a particular habitat by training a deep learning model using microbiome samples collected from this habitat. The well-trained deep learning model enables us to quantify the community-specific keystoneness of each species in any microbiome sample from this habitat by conducting a thought experiment on species removal. We systematically validated this DKI framework using synthetic data generated from a classical population dynamics model in community ecology. We then applied DKI to analyze human gut, oral microbiome, soil, and coral microbiome data. We found that those taxa with high median keystoneness across different communities display strong community specificity, and many of them have been reported as keystone taxa in literature. The presented DKI framework demonstrates the power of machine learning in tackling a fundamental problem in community ecology, paving the way for the data-driven management of complex microbial communities.
 
 
-## This repository contains:
+# Repo Contents
 (1) A synthetic dataset to test the Data-driven Keystone species Identification (DKI) framework.
 
 (2) Python code to predict the species composition using species assemblage (cNODE2) and R code to compute keystoneness.
@@ -30,7 +30,7 @@ Previous studies suggested that microbial communities harbor keystone species wh
 (3) Predicted species composition after removing each present species in each sample.
 
 # Data type for DKI.
-### (1) Ptrain.csv: matrix of taxanomic profile of size N*M, where N is the number of taxa and M is the sample size (without header).
+## (1) Ptrain.csv: matrix of taxanomic profile of size N*M, where N is the number of taxa and M is the sample size (without header).
 
 |           | sample 1 | sample 2 | sample 3 | sample 4 |
 |-----------|----------|----------|----------|----------|
@@ -41,7 +41,7 @@ Previous studies suggested that microbial communities harbor keystone species wh
 | species 5 | 0        | 0        | 0        | 0.17     |
 | species 6 | 0.04     | 0.4      | 0.07     | 0.06     |
 
-### (2) Thought experiment: thought experiemt was realized by removing each present species in each sample. This will generated three data type.
+## (2) Thought experiment: thought experiemt was realized by removing each present species in each sample. This will generated three data type.
 
 * Ztest.csv: matrix of perturbed species collection of size N*C, where N is the number of taxa and C is the total perturbed samples (without header).
 
@@ -88,8 +88,8 @@ Previous studies suggested that microbial communities harbor keystone species wh
 | 4      |
 | 4      |
 
-## How the use the DKI framework.
-### Step 1: Predict species compostion using perturbed species assemblage.
+# How the use the DKI framework.
+## Step 1: Predict species compostion using perturbed species assemblage.
 Run Python code "DKI.py" by taking Ptrain.csv and Ztest.csv as input will output the predicted microbiome composition using perturbed species colloction matrix Ztest.csv.
 The output file qtst.csv:
 
@@ -102,7 +102,7 @@ The output file qtst.csv:
 | species 5 | 0.0000000 | 0.0000000 | 0.000000  | 0.4444696  | 0.00000000 | 0.00000000 | 0.00000000 | 0.0000000 | 0.0000000 | 0.0000000  | 0.00000000 | 0.1946942 |
 | species 6 | 0.1684826 | 0.1712168 | 0.787059  | 0.5555304  | 0.07541692 | 0.07541692 | 0.07541692 | 0.0754169 | 0.0000000 | 0.0000000  | 0.00000000 | 0.0000000 |
 
-### Step 2: Compute the keystoneness.
+## Step 2: Compute the keystoneness.
 Run R code Keystoneness_computing.R to compute the keystonenss of each present in each sample. The output file:
 
 | keystoneness | sample | species |
