@@ -4,7 +4,7 @@ This is a TensorFlow implementation of DIRAC, as described in our paper:
 Wang, X.W., Sun, Z., Jia, H., Michel-Mata, S., Angulo, M.T., Dai, L., He, X., Weiss, S.T. and Liu, Y.Y. [Identifying keystone species in microbial communities using deep learning]. bioRxiv, pp.2023-03 (2023). 
 
 <p align="center">
-  <img src="Paper/DKI.png" alt="demo" width="700" style="display: block; margin: 0 auto;">
+  <img src="Paper/DKI.png" alt="demo" width="600" style="display: block; margin: 0 auto;">
 </p>
 
 
