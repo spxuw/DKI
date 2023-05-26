@@ -39,6 +39,7 @@ We have tested this code for Python 3.8.13 and R 4.1.2.
 | species 6 | 1        | 1        | 0        | 1        | 1        | 0        | 1        | 1        | 0        | 1         | 1         | 0         |
 
 * Species_id: a list indicating which species has been removed in each sample.
+
 | species |
 |---------|
 | 1       |
@@ -55,6 +56,7 @@ We have tested this code for Python 3.8.13 and R 4.1.2.
 | 6       |
 
 * Sample_id: a list indicating which sample that the species been removed.
+
 | sample |
 |--------|
 | 1      |
