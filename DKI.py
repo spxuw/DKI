@@ -141,7 +141,7 @@ t = torch.arange(0.0, 100.0, 0.01)
 
 # load the dataset
 filepath_train = '../data/'+str(dataset)+'/Ptrain.csv'
-filepath_test = '../data/'+str(dataset)+'/Ptest.csv'
+filepath_test = '../data/'+str(dataset)+'/Ptest.csv' # Replace "Ptest.csv" with "Ztest.csv" for real dataset.
 
 P = np.loadtxt(filepath_train,delimiter=',')
 number_of_cols = P.shape[1]
