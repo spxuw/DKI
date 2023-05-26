@@ -1,7 +1,7 @@
 # DKI (Data-driven Keystone species Identification)
 This is a TensorFlow implementation of DIRAC, as described in our paper:
 
-Wang, X.W., Sun, Z., Jia, H., Michel-Mata, S., Angulo, M.T., Dai, L., He, X., Weiss, S.T. and Liu, Y.Y. [Identifying keystone species in microbial communities using deep learning]. bioRxiv, pp.2023-03 (2023). ![demo](Paper/DKI.png)
+Wang, X.W., Sun, Z., Jia, H., Michel-Mata, S., Angulo, M.T., Dai, L., He, X., Weiss, S.T. and Liu, Y.Y. [Identifying keystone species in microbial communities using deep learning]. bioRxiv, pp.2023-03 (2023). ![demo](Paper/DKI.png =250x250)
 
 We have tested this code for Python 3.8.13 and R 4.1.2.
 
