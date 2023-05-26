@@ -3,9 +3,10 @@ This is a TensorFlow implementation of DIRAC, as described in our paper:
 
 Wang, X.W., Sun, Z., Jia, H., Michel-Mata, S., Angulo, M.T., Dai, L., He, X., Weiss, S.T. and Liu, Y.Y. [Identifying keystone species in microbial communities using deep learning]. bioRxiv, pp.2023-03 (2023). 
 
-<div style="text-align: center;">
-  <img src="Paper/DKI.png" alt="demo" width="700">
-</div>
+<p align="center">
+  <img src="Paper/DKI.png" alt="demo" width="700" style="display: block; margin: 0 auto;">
+</p>
+
 
 We have tested this code for Python 3.8.13 and R 4.1.2.
 
