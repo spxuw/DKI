@@ -136,7 +136,7 @@ def train_reptile(max_epochs,mb,LR,ztrn,ptrn,ztst,ptst,zval,pval,zall,pall):
 max_epochs = 1000
 device = 'cpu'
 batch_time = 100
-t = torch.arange(0.0, 100.0, 0.01)
+t = torch.arange(0.0, batch_time, 0.01)
 
 
 # load the dataset
