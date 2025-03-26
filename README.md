@@ -88,7 +88,7 @@ Previous studies suggested that microbial communities harbor keystone species wh
 | 4      |
 | 4      |
 
-# How the use the DKI framework
+# How to use the DKI framework
 ## Step 1: Predict species compostion using perturbed species assemblage
 Run Python code "DKI.py" by taking Ptrain.csv and Ztest.csv as input will output the predicted microbiome composition using perturbed species colloction matrix Ztest.csv.
 The output file qtst.csv:
